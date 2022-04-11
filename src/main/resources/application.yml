@@ -1,0 +1,27 @@
+server:
+  port: 8085
+  servlet:
+    context-path: /comovimientos
+spring:
+  application:
+    name: comovimientos
+  main:
+    banner-mode: "off"
+  datasource:
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 10
+      auto-commit: true
+      idle-timeout: 600000
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@10.20.43.34:1540:FULXT01D
+    username: EFINAN
+    password: FUNO2016
+    type: com.zaxxer.hikari.HikariDataSource
+  batch:
+     job:
+      enabled: false
+     initialize-schema: always
+
+file:
+  input: lote-movimiento.csv
