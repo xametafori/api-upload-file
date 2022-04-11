@@ -14,9 +14,9 @@ spring:
       auto-commit: true
       idle-timeout: 600000
     driver-class-name: oracle.jdbc.driver.OracleDriver
-    url: jdbc:oracle:thin:@10.20.43.34:1540:FULXT01D
-    username: EFINAN
-    password: FUNO2016
+    url: jdbc:oracle:thin:@10.20.40.20:1540:FULXT01D #REEMPLAZAR
+    username: EBATCH #REEMPLAZAR
+    password: EBATCH #REEMPLAZAR
     type: com.zaxxer.hikari.HikariDataSource
   batch:
      job:

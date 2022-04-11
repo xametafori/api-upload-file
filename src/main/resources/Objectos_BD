@@ -1,0 +1,14 @@
+CREATE TABLE EBATCH.BCO_MOVIMIENTOS(
+  id INT NOT NULL ,
+  nro_operacion VARCHAR(20) NOT NULL,
+  importe NUMBER(10,2) NOT NULL,
+  fecha_proceso DATE NOT NULL,
+  PRIMARY KEY (id));
+
+-- Create sequence
+create sequence EBATCH.SEQ_BCO_MOVIMIENTOS
+minvalue 1
+maxvalue 9999999999999999999999999999
+start with 1
+increment by 1
+cache 20;

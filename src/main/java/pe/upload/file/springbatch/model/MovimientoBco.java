@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Entity
-@Table(name="BCO_MOVIMIENTOS",schema = "EFINAN")
+@Table(name="BCO_MOVIMIENTOS",schema = "EBATCH")
 public class MovimientoBco implements Serializable {
 
 
@@ -21,7 +21,7 @@ public class MovimientoBco implements Serializable {
 
     @Id
     @GeneratedValue(generator = "seqGeneradorMov", strategy = GenerationType.AUTO)
-    @SequenceGenerator(name = "seqGeneradorMov", sequenceName = "EFINAN.SEQ_BCO_MOVIMIENTOS", allocationSize = 1)
+    @SequenceGenerator(name = "seqGeneradorMov", sequenceName = "EBATCH.SEQ_BCO_MOVIMIENTOS", allocationSize = 1)
     @Column(name = "id", nullable = false)
     private Integer id;
 
